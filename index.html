@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./CSS.css">
+    <link rel="stylesheet" href="./themify-icons/themify-icons.css">
+    <!-- <link rel="stylesheet" href="C:\Users\tab23\OneDrive\Máy tính\animation test\animation\responsive.css"> -->
+</head>
+<body>
+    <div id="main">
+        <div id="header">
+            <!-- Nav -->
+            <ul id="nav">
+                <li><a href="#">Home </a></li>
+                <li><a href="#images">Galery</a></li>
+                <li><a href="#content">Product</a></li>
+                <li><a href="#Contact">Contact</a></li>
+                <li>
+                    <a href="#">More
+                        <i class="arrow-down ti-angle-down"></i>
+                    </a>
+                    <ul class="subnav">
+                        <li><a href="#">Merchandise</a></li>
+                        <li><a href="#">Extras</a></li>
+                        <li><a href="#">Media</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- Nav/ -->
+            <!-- Begin seach -->
+            <div class="search-btn">
+                <i class="search-icon ti-search"></i>
+            </div>
+
+            <div id="mobile-menu" class="mobile-menu-btn">
+                <i class="menu-icon ti-menu"></i>
+            </div>
+            <!-- End seach -->
+        </div>
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="./image/Slider/Dog.jpg" style="width:100%">
+            <div class="text">Always by your side</div>
+            </div>
+        
+            <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="./image/Slider/Cat.jpg" style="width:100%">
+            <div class="text">Warm your heart with cuteness</div>
+            </div>
+        
+            <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="./image/Slider/Pet.jpg" style="width:100%">
+            <div class="text">Make your day</div>
+            </div>
+        
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+        
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+        <div class="header-line">
+            <h1>How about getting youself <span class="high-light">one of these little fella</span></h1>
+        </div>
+        <div id="images">
+            <div class="swiper">
+                <div class="card-groups">
+                <div class="card-group" data-index="0" data-status="active">
+                <div class="small-card card">      
+
+                </div>
+                <div class="big-card card">      
+
+                </div>
+                <div class="small-card card">      
+
+                </div>
+                <div class="big-card card">      
+
+                </div>
+                <div class="small-card card">      
+
+                </div>
+                <div class="big-card card">      
+
+                </div>
+                <div class="small-card card">      
+
+                </div>
+                <div class="big-card card">      
+
+                </div>
+                <div class="small-card card">      
+
+                </div>
+                </div>
+                <div class="card-group" data-index="1" data-status="unknown">
+                <div class="small-card card">      
+
+                </div>
+                <div class="big-card card">      
+
+                </div>
+                <div class="small-card card">      
+
+                </div>
+                <div class="big-card card">      
+
+                </div>
+                <div class="small-card card">      
+
+                </div>
+                <div class="big-card card">      
+
+                </div>
+                <div class="small-card card">      
+
+                </div>
+                <div class="big-card card">      
+
+                </div>
+                <div class="small-card card">      
+
+                </div>
+                </div>
+                <div class="card-group" data-index="2" data-status="unknown">
+                <div class="small-card card">      
+
+                </div>
+                <div class="big-card card">      
+
+                </div>
+                <div class="small-card card">      
+
+                </div>
+                <div class="big-card card">      
+
+                </div>
+                <div class="small-card card">      
+
+                </div>
+                <div class="big-card card">      
+
+                </div>
+                <div class="small-card card">      
+
+                </div>
+                <div class="big-card card">      
+
+                </div>
+                <div class="small-card card">      
+
+                </div>
+                </div>
+            </div>
+            <div class="swiper-button">
+                <button id="hate-button" onclick="handleHateClick()">
+                    <i class="fa-solid ti-close"></i>
+                </button>
+                <button id="love-button" onclick="handleLoveClick()">
+                    <i class="fa-solid ti-heart"></i>
+                </button>
+            </div>
+            </div>
+
+        </div>
+        <div id="content">
+            <div id="band" class="content-section">
+                <h2 class="section-heading">Product</h2>
+                <p class="section-sub-heading">We have all the thing you pet need</p>
+                <p class="about-text">We have all the product you looking for. You can get toy, medicine, accessory for your little guy in our store <br> We serve our customer with the best service.</p>
+            </div>
+            <!-- member section -->
+            <div>
+                <div class="row member-list clear">
+                    <div class="col col-third s-col-full mt32 text-center">
+                        <p class="member-name">Food</p>
+                        <img src="./image/Product/food.png" alt="Name" class="memner-img">
+                    </div>
+
+                    <div class="col col-third s-col-full mt32 text-center">
+                        <p class="member-name">Medicine</p>
+                        <img src="./image/Product/medicine.png" alt="Name" class="memner-img">
+                    </div>
+
+                    <div class="col col-third s-col-full mt32 text-center">
+                        <p class="member-name">Accessory</p>
+                        <img src="./image/Product/accessory.png" alt="Name" class="memner-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="image-track" data-mouse-down-at="0" data-prev-percentage="0">
+            <h1> Let's make some unforget <span class="high-light">memory</span></h1>
+            <img class="image" src="https://images.unsplash.com/photo-1505137266260-1102ba7cac3b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8NDd8MjY4MjM1MTB8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60" draggable="false" />
+            <img class="image" src="https://images.unsplash.com/photo-1590527844234-563331a1d02c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8Njh8MjY4MjM1MTB8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60" draggable="false" />
+            <img class="image" src="https://images.unsplash.com/photo-1618202133208-2907bebba9e1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80" draggable="false" />
+            <img class="image" src="https://images.unsplash.com/photo-1601758174114-e711c0cbaa69?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8ODN8MjY4MjM1MTB8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60" draggable="false" />
+            <img class="image" src="https://images.unsplash.com/photo-1466618786657-4df462be674e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MTY4fDI2ODIzNTEwfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60" draggable="false" />
+            <img class="image" src="https://images.unsplash.com/photo-1574381490793-94b39539ee05?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8NDI4fDI2ODIzNTEwfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60" draggable="false" />
+            <img class="image" src="https://images.unsplash.com/photo-1600865528073-861bb734a87b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8NDMzfDI2ODIzNTEwfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60" draggable="false" />
+            <img class="image" src="https://images.unsplash.com/photo-1581915769685-372857b47d7a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8NjgyfDI2ODIzNTEwfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60" draggable="false" />
+        </div>
+        <div id="Contact">
+            <div id="bg-img">
+                <form action="/action_page.php" class="container">
+                <h1>Feel interested ? We will send to you more detail and awesome discount event </h1>
+            
+                <label for="email"><b>Your Email</b></label>
+                <input type="text" placeholder="Enter Email" name="email" required>
+            
+                <label for="psw"><b>Phone number</b></label>
+                <input type="password" placeholder="Enter Number" name="psw" required>
+            
+                <button type="submit" class="btn">Send</button>
+                </form>
+            </div>
+            <div id="footer">
+                <div class="social-icon">
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><i  class ="ti-facebook" ></i></a>
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><i  class ="ti-instagram" ></i></a>
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><i  class ="ti-pinterest" ></i></a>
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><i  class ="ti-twitter" ></i></a>
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><i  class ="ti-linkedin" ></i></a>
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><i  class ="ti-youtube" ></i></a>
+                </div>
+                <p class="copyright">Want some more imformation ? <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">clik here</a></p>
+            </div>
+        </div>
+    </div>    
+    <script src="Js.js"></script>
+</body>
+</html> 
